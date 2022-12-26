@@ -1,9 +1,14 @@
 #include <Arduino.h>
+#include "Moteur.hpp"
 
-void setup() {
-  // put your setup code here, to run once:
+using namespace std;
+
+void setup()
+{
+  Moteur moteur1(13);
+  Serial.println(moteur1.getPin());
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop()
+{
 }
