@@ -1,5 +1,6 @@
 #include <Arduino.h>
-#include "Moteur.hpp"
+#include "composants/Moteur.hpp"
+#include "composants/Thermometre.hpp"
 
 using namespace std;
 
