@@ -14,10 +14,13 @@ int Moteur::getPin() const
 
 double Moteur::getPosition() const
 {
-  return position;
+  return 0;
+  // return position;
+  // TODO
 }
 
 void Moteur::setPosition(double _position)
 {
-  position = _position;
+  // position = _position;
+  // TODO
 }

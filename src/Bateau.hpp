@@ -1,17 +1,18 @@
 #ifndef DEF_BATEAU
 #define DEF_BATEAU
 
-#include "util/Coordonnees.hpp"
-
+#include "composants/GPS.hpp"
 class Bateau
 {
 private:
-  Coordonnees *coordonnes;
+  double latitude;
+  double longitude;
 
 public:
-  Bateau();
+  Bateau(double _latitude, double _longitude);
   double getLatitude() const;
   double getLongitude() const;
+  void updateCoordonnees(GPS GPS);
 };
 
 #endif

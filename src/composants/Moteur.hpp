@@ -5,7 +5,7 @@ class Moteur
 {
 private:
   int pin;
-  double position;
+  // double position;
 
 public:
   Moteur(int _pin);

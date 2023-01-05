@@ -1,15 +1,18 @@
 #include "Bateau.hpp"
-#include "util/Coordonnees.hpp"
 
-Bateau::Bateau()
+Bateau::Bateau(double _latitude, double _longitude) : latitude(_latitude), longitude(_longitude)
 {
-  coordonnes = new Coordonnees(0, 0);
 }
 double Bateau::getLatitude() const
 {
-  return coordonnes->getLatitude();
+  return latitude;
 }
 double Bateau::getLongitude() const
 {
-  return coordonnes->getLongitude();
+  return longitude;
+}
+// Met à jour la latitude et la longitude du bateau si cela n'a pas été fait depuis un certain temps
+void Bateau::updateCoordonnees(GPS GPS)
+{
+  // TODO
 }
