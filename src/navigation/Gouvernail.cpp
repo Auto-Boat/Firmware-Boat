@@ -17,3 +17,15 @@ void Gouvernail::positionner(double angle)
   Serial.print(angle);
   Serial.println(" degres");
 }
+
+double Gouvernail::getAngle()
+{
+  return 0.0;
+}
+
+void Gouvernail::printAngle()
+{
+  Serial.print("Angle du gouvernail par rapport à la pointe arrière du bateau : ");
+  Serial.print(getAngle());
+  Serial.println("°");
+}
