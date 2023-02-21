@@ -16,7 +16,7 @@ public:
 
   const int LIBRE = 0;  // Est libre de changer de direction si nécessaire
   const int OCCUPE = 1; // En train de faire une manoeuvre, donc ne pas donner d'ordre contradictoire
-  int etat = LIBRE;     // LIBRE ou OCCUPE
+  int etat = LIBRE;     // LIBRE ou OCCUPE (en manoeuvre)
 
   Bateau();
 

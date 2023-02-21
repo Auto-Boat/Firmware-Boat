@@ -14,7 +14,7 @@ double Boussole::getAngleBateau_Nord()
 
 void Boussole::printAngleBateau_Nord()
 {
-  Serial.print('Angle entre le bateau et le Nord : ');
+  Serial.print("Angle entre le bateau et le Nord : ");
   Serial.print(getAngleBateau_Nord());
-  Serial.println('°');
+  Serial.println("°");
 }

@@ -15,6 +15,6 @@ double PH_Metre::getPH()
 
 void PH_Metre::printPH()
 {
-  Serial.print('pH : ');
+  Serial.print("pH : ");
   Serial.println(getPH());
 }

@@ -1,5 +1,4 @@
 #include "SuperCapteur.hpp"
-#include <Adafruit_BME280.h>
 
 SuperCapteur::SuperCapteur()
 {
