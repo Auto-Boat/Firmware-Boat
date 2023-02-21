@@ -1,17 +1,17 @@
 #include <Arduino.h>
-#include "capteurs/SuperCapteur.hpp"
+// #include "capteurs/SuperCapteur.hpp"
 #include "navigation/Gouvernail.hpp"
 #include "navigation/Aileron.hpp"
 #include "navigation/Bateau.hpp"
-#include "capteurs/PH_Metre.hpp"
+// #include "capteurs/PH_Metre.hpp"
 
 #define delaiRafraichissementAffichage 1500
 
-SuperCapteur superCapteur;
+// SuperCapteur superCapteur;
 Gouvernail gouvernail;
 Bateau bateau;
 Aileron aileron;
-PH_Metre pH_metre;
+// PH_Metre pH_metre;
 
 void setup()
 {
@@ -19,7 +19,7 @@ void setup()
 
   while (!Serial)
     ;
-  Serial.println("Début du programme");
+  Serial.println("Debut du programme");
   Serial.println("===========================");
   Serial.println();
 
@@ -33,13 +33,13 @@ void setup()
 
 void loop()
 {
-  superCapteur.printTemperature();
-  superCapteur.printHumidite();
-  superCapteur.printPression();
-  superCapteur.printAltitude();
+  // superCapteur.printTemperature();
+  // superCapteur.printHumidite();
+  // superCapteur.printPression();
+  // superCapteur.printAltitude();
 
-  pH_metre.printPH();
+  // pH_metre.printPH();
 
   delay(delaiRafraichissementAffichage);
-  Serial.println();
+  Serial.println("test");
 }
