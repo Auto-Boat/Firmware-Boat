@@ -5,15 +5,15 @@ Aileron::Aileron()
 {
   // TODO
   mettreEnPosition(NEUTRE);
-  Serial.println("Aileron initialise");
+  // Serial.println("Aileron initialise");
 }
 
 void Aileron::_positionner(double angle)
 {
   // TODO
-  Serial.print("Aileron position avec un angle de ");
-  Serial.print(angle);
-  Serial.println(" degres");
+  // Serial.print("Aileron position avec un angle de ");
+  // Serial.print(angle);
+  // Serial.println(" degres");
 }
 
 void Aileron::mettreEnPosition(int position)

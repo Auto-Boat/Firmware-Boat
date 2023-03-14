@@ -4,6 +4,7 @@
 #define adresseI2CduBME280 0x76
 #define pressionAuNiveauDeLaMerEnHpa 1024.90
 #include <Adafruit_BME280.h>
+#include <Adafruit_Sensor.h>
 
 class SuperCapteur
 {
