@@ -2,19 +2,18 @@
 
 SuperCapteur::SuperCapteur()
 {
-  Serial.print(F("Initialisation du BME280, à l'adresse [0x"));
-  Serial.print(adresseI2CduBME280, HEX);
-  Serial.println(F("]"));
+  Serial.println("Initialisation super capteur");
 
   if (!bme.begin(adresseI2CduBME280))
   {
-    Serial.println(F("--> ÉCHEC…"));
+    Serial.println(F("--> ECHEC…"));
   }
   else
   {
-    Serial.println(F("--> RÉUSSIE !"));
+    Serial.println(F("--> REUSSI !"));
   }
   Serial.println();
+  bme.begin(adresseI2CduBME280);
 }
 
 double SuperCapteur::getTemperature()
